@@ -6,7 +6,7 @@ name: EMAIL
 on:
   # Triggers the workflow on push or pull request events but only for the "main" branch
   schedule:
-    - cron: '*/10 * * * *'
+    - cron: '*/59 * * * *'
   push:
     branches: [ "main" ]
   pull_request:
