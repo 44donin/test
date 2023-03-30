@@ -39,7 +39,7 @@ jobs:
         run: |
           pip install pandas
           pip install secure-smtplib
-          pip install email
+          pip install --upgrade pip
         
       # Runs a single command using the runners shell
       - name: Run directory
