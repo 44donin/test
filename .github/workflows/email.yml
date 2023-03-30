@@ -27,7 +27,8 @@ jobs:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - name: Checkout
         uses: actions/checkout@v3
-      
+        with:
+          path: main
       - name: Setup Python
         uses: actions/setup-python@v2
         with:
