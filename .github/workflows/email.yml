@@ -36,7 +36,9 @@ jobs:
           cache: 'pip'
           
       - name: Install Dependencies
-        run: pip install pandas
+        run: |
+          pip install pandas
+          pip install secure-smtplib
         
       # Runs a single command using the runners shell
       - name: Run directory
