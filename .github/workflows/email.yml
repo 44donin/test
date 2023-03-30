@@ -39,12 +39,12 @@ jobs:
         run: pip install pandas
         
       # Runs a single command using the runners shell
-      - name: Run a one-line script
-        run: ls
-      - name: enter directory
-        run: cd main
-      - name: check files
-        run: ls
+      - name: Run directory
+        run: |
+          ls
+          cd ./main
+          ls
+
         
         
       - name: Run Script and Update Plot
